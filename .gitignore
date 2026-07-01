@@ -1,0 +1,20 @@
+# Maven build output
+target/
+
+# Compiled classes
+*.class
+
+# Log files (generated at runtime)
+logs/
+src/test/
+# IntelliJ IDEA project files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

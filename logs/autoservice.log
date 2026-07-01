@@ -1,0 +1,88 @@
+2026-07-01 23:20:57.737 [main] INFO  by.grechanikovars.autoservice.entity.AutoService - AutoService initialized: 3 bay(s), 50 part(s) in warehouse.
+2026-07-01 23:20:57.750 [pool-2-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.ArrivedStateImpl - Car 1 [ARRIVED] — waiting for a free bay. Parts needed: 4.
+2026-07-01 23:20:57.751 [pool-2-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 entered bay 1.
+2026-07-01 23:20:57.753 [pool-2-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.InRepairStateImpl - Car 1 [IN_REPAIR] — repair started, using 4 part(s).
+2026-07-01 23:20:57.753 [pool-2-thread-1] INFO  by.grechanikovars.autoservice.entity.PartsWarehouse - Parts taken from warehouse: 4. Remaining: 46.
+2026-07-01 23:20:57.753 [pool-2-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 received 4 part(s) from warehouse.
+2026-07-01 23:20:58.566 [pool-2-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.RepairedStateImpl - Car 1 [REPAIRED] — fully repaired, ready to depart.
+2026-07-01 23:20:58.566 [pool-2-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 released bay 1.
+2026-07-01 23:20:58.567 [pool-2-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.DepartedStateImpl - Car 1 [DEPARTED] — has left the auto service.
+2026-07-01 23:20:58.569 [main] INFO  by.grechanikovars.autoservice.service.impl.CarRepairServiceImpl - All 1 car(s) have been serviced.
+2026-07-01 23:20:58.602 [main] INFO  by.grechanikovars.autoservice.entity.AutoService - AutoService initialized: 3 bay(s), 50 part(s) in warehouse.
+2026-07-01 23:20:58.603 [pool-3-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.ArrivedStateImpl - Car 1 [ARRIVED] — waiting for a free bay. Parts needed: 2.
+2026-07-01 23:20:58.603 [pool-3-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 entered bay 1.
+2026-07-01 23:20:58.603 [pool-3-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.InRepairStateImpl - Car 1 [IN_REPAIR] — repair started, using 2 part(s).
+2026-07-01 23:20:58.605 [pool-3-thread-1] INFO  by.grechanikovars.autoservice.entity.PartsWarehouse - Parts taken from warehouse: 2. Remaining: 48.
+2026-07-01 23:20:58.605 [pool-3-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 received 2 part(s) from warehouse.
+2026-07-01 23:20:59.019 [pool-3-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.RepairedStateImpl - Car 1 [REPAIRED] — fully repaired, ready to depart.
+2026-07-01 23:20:59.019 [pool-3-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 released bay 1.
+2026-07-01 23:20:59.019 [pool-3-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.DepartedStateImpl - Car 1 [DEPARTED] — has left the auto service.
+2026-07-01 23:20:59.020 [main] INFO  by.grechanikovars.autoservice.service.impl.CarRepairServiceImpl - All 1 car(s) have been serviced.
+2026-07-01 23:20:59.024 [main] INFO  by.grechanikovars.autoservice.entity.AutoService - AutoService initialized: 3 bay(s), 50 part(s) in warehouse.
+2026-07-01 23:20:59.026 [pool-4-thread-2] INFO  by.grechanikovars.autoservice.entity.state.impl.ArrivedStateImpl - Car 2 [ARRIVED] — waiting for a free bay. Parts needed: 3.
+2026-07-01 23:20:59.027 [pool-4-thread-2] INFO  by.grechanikovars.autoservice.entity.Car - Car 2 entered bay 1.
+2026-07-01 23:20:59.028 [pool-4-thread-2] INFO  by.grechanikovars.autoservice.entity.state.impl.InRepairStateImpl - Car 2 [IN_REPAIR] — repair started, using 3 part(s).
+2026-07-01 23:20:59.029 [pool-4-thread-2] INFO  by.grechanikovars.autoservice.entity.PartsWarehouse - Parts taken from warehouse: 3. Remaining: 47.
+2026-07-01 23:20:59.029 [pool-4-thread-2] INFO  by.grechanikovars.autoservice.entity.Car - Car 2 received 3 part(s) from warehouse.
+2026-07-01 23:20:59.029 [pool-4-thread-3] INFO  by.grechanikovars.autoservice.entity.state.impl.ArrivedStateImpl - Car 3 [ARRIVED] — waiting for a free bay. Parts needed: 1.
+2026-07-01 23:20:59.030 [pool-4-thread-3] INFO  by.grechanikovars.autoservice.entity.Car - Car 3 entered bay 2.
+2026-07-01 23:20:59.030 [pool-4-thread-3] INFO  by.grechanikovars.autoservice.entity.state.impl.InRepairStateImpl - Car 3 [IN_REPAIR] — repair started, using 1 part(s).
+2026-07-01 23:20:59.030 [pool-4-thread-3] INFO  by.grechanikovars.autoservice.entity.PartsWarehouse - Parts taken from warehouse: 1. Remaining: 46.
+2026-07-01 23:20:59.030 [pool-4-thread-3] INFO  by.grechanikovars.autoservice.entity.Car - Car 3 received 1 part(s) from warehouse.
+2026-07-01 23:20:59.028 [pool-4-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.ArrivedStateImpl - Car 1 [ARRIVED] — waiting for a free bay. Parts needed: 2.
+2026-07-01 23:20:59.031 [pool-4-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 entered bay 3.
+2026-07-01 23:20:59.031 [pool-4-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.InRepairStateImpl - Car 1 [IN_REPAIR] — repair started, using 2 part(s).
+2026-07-01 23:20:59.032 [pool-4-thread-1] INFO  by.grechanikovars.autoservice.entity.PartsWarehouse - Parts taken from warehouse: 2. Remaining: 44.
+2026-07-01 23:20:59.032 [pool-4-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 received 2 part(s) from warehouse.
+2026-07-01 23:20:59.240 [pool-4-thread-3] INFO  by.grechanikovars.autoservice.entity.state.impl.RepairedStateImpl - Car 3 [REPAIRED] — fully repaired, ready to depart.
+2026-07-01 23:20:59.242 [pool-4-thread-3] INFO  by.grechanikovars.autoservice.entity.Car - Car 3 released bay 2.
+2026-07-01 23:20:59.242 [pool-4-thread-3] INFO  by.grechanikovars.autoservice.entity.state.impl.DepartedStateImpl - Car 3 [DEPARTED] — has left the auto service.
+2026-07-01 23:20:59.440 [pool-4-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.RepairedStateImpl - Car 1 [REPAIRED] — fully repaired, ready to depart.
+2026-07-01 23:20:59.440 [pool-4-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 released bay 3.
+2026-07-01 23:20:59.440 [pool-4-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.DepartedStateImpl - Car 1 [DEPARTED] — has left the auto service.
+2026-07-01 23:20:59.644 [pool-4-thread-2] INFO  by.grechanikovars.autoservice.entity.state.impl.RepairedStateImpl - Car 2 [REPAIRED] — fully repaired, ready to depart.
+2026-07-01 23:20:59.645 [pool-4-thread-2] INFO  by.grechanikovars.autoservice.entity.Car - Car 2 released bay 1.
+2026-07-01 23:20:59.646 [pool-4-thread-2] INFO  by.grechanikovars.autoservice.entity.state.impl.DepartedStateImpl - Car 2 [DEPARTED] — has left the auto service.
+2026-07-01 23:20:59.647 [main] INFO  by.grechanikovars.autoservice.service.impl.CarRepairServiceImpl - All 3 car(s) have been serviced.
+2026-07-01 23:20:59.661 [main] INFO  by.grechanikovars.autoservice.entity.AutoService - AutoService initialized: 3 bay(s), 50 part(s) in warehouse.
+2026-07-01 23:20:59.665 [pool-5-thread-2] INFO  by.grechanikovars.autoservice.entity.state.impl.ArrivedStateImpl - Car 2 [ARRIVED] — waiting for a free bay. Parts needed: 1.
+2026-07-01 23:20:59.664 [pool-5-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.ArrivedStateImpl - Car 1 [ARRIVED] — waiting for a free bay. Parts needed: 1.
+2026-07-01 23:20:59.666 [pool-5-thread-2] INFO  by.grechanikovars.autoservice.entity.Car - Car 2 entered bay 1.
+2026-07-01 23:20:59.666 [pool-5-thread-2] INFO  by.grechanikovars.autoservice.entity.state.impl.InRepairStateImpl - Car 2 [IN_REPAIR] — repair started, using 1 part(s).
+2026-07-01 23:20:59.667 [pool-5-thread-2] INFO  by.grechanikovars.autoservice.entity.PartsWarehouse - Parts taken from warehouse: 1. Remaining: 49.
+2026-07-01 23:20:59.667 [pool-5-thread-2] INFO  by.grechanikovars.autoservice.entity.Car - Car 2 received 1 part(s) from warehouse.
+2026-07-01 23:20:59.667 [pool-5-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 entered bay 2.
+2026-07-01 23:20:59.667 [pool-5-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.InRepairStateImpl - Car 1 [IN_REPAIR] — repair started, using 1 part(s).
+2026-07-01 23:20:59.668 [pool-5-thread-1] INFO  by.grechanikovars.autoservice.entity.PartsWarehouse - Parts taken from warehouse: 1. Remaining: 48.
+2026-07-01 23:20:59.669 [pool-5-thread-3] INFO  by.grechanikovars.autoservice.entity.state.impl.ArrivedStateImpl - Car 3 [ARRIVED] — waiting for a free bay. Parts needed: 1.
+2026-07-01 23:20:59.669 [pool-5-thread-4] INFO  by.grechanikovars.autoservice.entity.state.impl.ArrivedStateImpl - Car 4 [ARRIVED] — waiting for a free bay. Parts needed: 1.
+2026-07-01 23:20:59.669 [pool-5-thread-3] INFO  by.grechanikovars.autoservice.entity.Car - Car 3 entered bay 3.
+2026-07-01 23:20:59.670 [pool-5-thread-3] INFO  by.grechanikovars.autoservice.entity.state.impl.InRepairStateImpl - Car 3 [IN_REPAIR] — repair started, using 1 part(s).
+2026-07-01 23:20:59.670 [pool-5-thread-3] INFO  by.grechanikovars.autoservice.entity.PartsWarehouse - Parts taken from warehouse: 1. Remaining: 47.
+2026-07-01 23:20:59.670 [pool-5-thread-3] INFO  by.grechanikovars.autoservice.entity.Car - Car 3 received 1 part(s) from warehouse.
+2026-07-01 23:20:59.671 [pool-5-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 received 1 part(s) from warehouse.
+2026-07-01 23:20:59.670 [pool-5-thread-5] INFO  by.grechanikovars.autoservice.entity.state.impl.ArrivedStateImpl - Car 5 [ARRIVED] — waiting for a free bay. Parts needed: 1.
+2026-07-01 23:20:59.872 [pool-5-thread-3] INFO  by.grechanikovars.autoservice.entity.state.impl.RepairedStateImpl - Car 3 [REPAIRED] — fully repaired, ready to depart.
+2026-07-01 23:20:59.872 [pool-5-thread-3] INFO  by.grechanikovars.autoservice.entity.Car - Car 3 released bay 3.
+2026-07-01 23:20:59.872 [pool-5-thread-4] INFO  by.grechanikovars.autoservice.entity.Car - Car 4 entered bay 3.
+2026-07-01 23:20:59.872 [pool-5-thread-3] INFO  by.grechanikovars.autoservice.entity.state.impl.DepartedStateImpl - Car 3 [DEPARTED] — has left the auto service.
+2026-07-01 23:20:59.872 [pool-5-thread-4] INFO  by.grechanikovars.autoservice.entity.state.impl.InRepairStateImpl - Car 4 [IN_REPAIR] — repair started, using 1 part(s).
+2026-07-01 23:20:59.873 [pool-5-thread-4] INFO  by.grechanikovars.autoservice.entity.PartsWarehouse - Parts taken from warehouse: 1. Remaining: 46.
+2026-07-01 23:20:59.873 [pool-5-thread-4] INFO  by.grechanikovars.autoservice.entity.Car - Car 4 received 1 part(s) from warehouse.
+2026-07-01 23:20:59.879 [pool-5-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.RepairedStateImpl - Car 1 [REPAIRED] — fully repaired, ready to depart.
+2026-07-01 23:20:59.879 [pool-5-thread-2] INFO  by.grechanikovars.autoservice.entity.state.impl.RepairedStateImpl - Car 2 [REPAIRED] — fully repaired, ready to depart.
+2026-07-01 23:20:59.879 [pool-5-thread-2] INFO  by.grechanikovars.autoservice.entity.Car - Car 2 released bay 1.
+2026-07-01 23:20:59.879 [pool-5-thread-1] INFO  by.grechanikovars.autoservice.entity.Car - Car 1 released bay 2.
+2026-07-01 23:20:59.879 [pool-5-thread-1] INFO  by.grechanikovars.autoservice.entity.state.impl.DepartedStateImpl - Car 1 [DEPARTED] — has left the auto service.
+2026-07-01 23:20:59.879 [pool-5-thread-2] INFO  by.grechanikovars.autoservice.entity.state.impl.DepartedStateImpl - Car 2 [DEPARTED] — has left the auto service.
+2026-07-01 23:20:59.879 [pool-5-thread-5] INFO  by.grechanikovars.autoservice.entity.Car - Car 5 entered bay 1.
+2026-07-01 23:20:59.880 [pool-5-thread-5] INFO  by.grechanikovars.autoservice.entity.state.impl.InRepairStateImpl - Car 5 [IN_REPAIR] — repair started, using 1 part(s).
+2026-07-01 23:20:59.880 [pool-5-thread-5] INFO  by.grechanikovars.autoservice.entity.PartsWarehouse - Parts taken from warehouse: 1. Remaining: 45.
+2026-07-01 23:20:59.880 [pool-5-thread-5] INFO  by.grechanikovars.autoservice.entity.Car - Car 5 received 1 part(s) from warehouse.
+2026-07-01 23:21:00.081 [pool-5-thread-4] INFO  by.grechanikovars.autoservice.entity.state.impl.RepairedStateImpl - Car 4 [REPAIRED] — fully repaired, ready to depart.
+2026-07-01 23:21:00.081 [pool-5-thread-4] INFO  by.grechanikovars.autoservice.entity.Car - Car 4 released bay 3.
+2026-07-01 23:21:00.081 [pool-5-thread-4] INFO  by.grechanikovars.autoservice.entity.state.impl.DepartedStateImpl - Car 4 [DEPARTED] — has left the auto service.
+2026-07-01 23:21:00.082 [pool-5-thread-5] INFO  by.grechanikovars.autoservice.entity.state.impl.RepairedStateImpl - Car 5 [REPAIRED] — fully repaired, ready to depart.
+2026-07-01 23:21:00.082 [pool-5-thread-5] INFO  by.grechanikovars.autoservice.entity.Car - Car 5 released bay 1.
+2026-07-01 23:21:00.082 [pool-5-thread-5] INFO  by.grechanikovars.autoservice.entity.state.impl.DepartedStateImpl - Car 5 [DEPARTED] — has left the auto service.
+2026-07-01 23:21:00.082 [main] INFO  by.grechanikovars.autoservice.service.impl.CarRepairServiceImpl - All 5 car(s) have been serviced.
