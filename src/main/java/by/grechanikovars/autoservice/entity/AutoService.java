@@ -79,7 +79,4 @@ public class AutoService {
         return warehouse;
     }
 
-    public static void resetForTest() {
-        INSTANCE.set(null);
-    }
 }
