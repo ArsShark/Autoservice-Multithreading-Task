@@ -10,18 +10,18 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.concurrent.locks.ReentrantLock;
 
-public class AutoService {
+public class ServiceStation {
 
-    private static final Logger LOGGER = LogManager.getLogger(AutoService.class);
+    private static final Logger LOGGER = LogManager.getLogger(ServiceStation.class);
 
-    private static final AtomicReference<AutoService> INSTANCE = new AtomicReference<>();
+    private static final AtomicReference<ServiceStation> INSTANCE = new AtomicReference<>();
     private static final ReentrantLock INIT_LOCK = new ReentrantLock();
 
     private final Semaphore baysSemaphore;
     private final List<RepairBay> repairBays;
     private final PartsWarehouse warehouse;
 
-    private AutoService(int bayCount, int partsCount) {
+    private ServiceStation(int bayCount, int partsCount) {
         this.baysSemaphore = new Semaphore(bayCount, true);
         List<RepairBay> bays = new ArrayList<>();
         for (int i = 1; i <= bayCount; i++) {
@@ -29,11 +29,11 @@ public class AutoService {
         }
         this.repairBays = List.copyOf(bays);
         this.warehouse = new PartsWarehouse(partsCount);
-        LOGGER.info("AutoService initialized: {} bay(s), {} part(s) in warehouse.", bayCount, partsCount);
+        LOGGER.info("ServiceStation initialized: {} bay(s), {} part(s) in warehouse.", bayCount, partsCount);
     }
 
-    public static AutoService initialize(int bayCount, int partsCount) {
-        AutoService existing = INSTANCE.get();
+    public static ServiceStation initialize(int bayCount, int partsCount) {
+        ServiceStation existing = INSTANCE.get();
         if (existing != null) {
             return existing;
         }
@@ -41,7 +41,7 @@ public class AutoService {
         try {
             existing = INSTANCE.get();
             if (existing == null) {
-                AutoService newInstance = new AutoService(bayCount, partsCount);
+                ServiceStation newInstance = new ServiceStation(bayCount, partsCount);
                 INSTANCE.set(newInstance);
                 return newInstance;
             }
@@ -51,10 +51,11 @@ public class AutoService {
         }
     }
 
-    public static AutoService getInstance() throws AutoServiceException {
-        AutoService instance = INSTANCE.get();
+    public static ServiceStation getInstance() throws AutoServiceException {
+        ServiceStation instance = INSTANCE.get();
         if (instance == null) {
-            throw new AutoServiceException("AutoService is not initialized. Call initialize() first.");
+            throw new AutoServiceException(
+                    "ServiceStation is not initialized. Call initialize() first.");
         }
         return instance;
     }

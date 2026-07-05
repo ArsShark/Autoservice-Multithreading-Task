@@ -1,11 +1,12 @@
 package by.grechanikovars.autoservice;
 
-import by.grechanikovars.autoservice.entity.AutoService;
+import by.grechanikovars.autoservice.entity.ServiceStation;
 import by.grechanikovars.autoservice.entity.Car;
 import by.grechanikovars.autoservice.entity.RepairResult;
 import by.grechanikovars.autoservice.entity.ServiceConfig;
 import by.grechanikovars.autoservice.exception.AutoServiceException;
 import by.grechanikovars.autoservice.factory.CarFactory;
+import by.grechanikovars.autoservice.factory.RepairResultFactory;
 import by.grechanikovars.autoservice.parser.ServiceConfigParser;
 import by.grechanikovars.autoservice.reader.TaskFileReader;
 import by.grechanikovars.autoservice.reader.impl.TaskFileReaderImpl;
@@ -31,9 +32,10 @@ public class Main {
 
             int bayCount = config.bayCount();
             int warehouseParts = config.warehouseParts();
-            AutoService.initialize(bayCount, warehouseParts);
+            ServiceStation.initialize(bayCount, warehouseParts);
 
-            CarFactory carFactory = new CarFactory(new IdGenerator());
+            RepairResultFactory resultFactory = new RepairResultFactory(new IdGenerator());
+            CarFactory carFactory = new CarFactory(new IdGenerator(), resultFactory);
             List<Car> cars = carFactory.createCars(config.carPartsNeeded());
             int carCount = cars.size();
             LOGGER.info("=== Auto service simulation start: {} car(s), {} bay(s). ===", carCount, bayCount);

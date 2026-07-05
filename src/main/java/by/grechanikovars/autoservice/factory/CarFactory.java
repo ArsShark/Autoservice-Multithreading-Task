@@ -8,17 +8,19 @@ import java.util.List;
 
 public class CarFactory {
 
-    private final IdGenerator idGenerator;
+    private final IdGenerator carIdGenerator;
+    private final RepairResultFactory resultFactory;
 
-    public CarFactory(IdGenerator idGenerator) {
-        this.idGenerator = idGenerator;
+    public CarFactory(IdGenerator carIdGenerator, RepairResultFactory resultFactory) {
+        this.carIdGenerator = carIdGenerator;
+        this.resultFactory = resultFactory;
     }
 
     public List<Car> createCars(List<Integer> partsPerCar) {
         List<Car> cars = new ArrayList<>();
         for (Integer partsNeeded : partsPerCar) {
-            int id = idGenerator.nextId();
-            cars.add(new Car(id, partsNeeded));
+            int carId = carIdGenerator.nextId();
+            cars.add(new Car(carId, partsNeeded, resultFactory));
         }
         return cars;
     }
